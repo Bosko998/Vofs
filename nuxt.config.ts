@@ -6,7 +6,9 @@ export default defineNuxtConfig({
       APP_URL: process.env.APP_URL || "http://localhost:3000/",
     }
   },
-
+  image: {
+    domains: ['a.storyblok.com'],
+  },
   typescript: {
     strict: true,
     shim: false,
