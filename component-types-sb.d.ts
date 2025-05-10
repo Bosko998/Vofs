@@ -108,7 +108,7 @@ export interface singleProject{
 }
 export interface singleProjectIcons{
   date:string;
-  location:AssetStoryblok;
+  location:string;
   component:"singleProjectIcons";
   [k:string]:any
 }

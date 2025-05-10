@@ -10,8 +10,8 @@ const slug = computed(()=>{
 </script>
 <template>
     <div v-editable="blok.props">
+        <h1 class="text-2xl text-center">{{ props.blok.heading }}</h1>
         <div class="my-16 p-8 flex flex-col items-center justify-center text-center">
-            <h1 class="text-2xl">{{ props.blok.heading }}</h1>
             <div class="grid grid-cols-4 gap-8 p-8">
 
                 <div v-for="(item,index) in props.blok.projectItems" class="cursor-pointer">
