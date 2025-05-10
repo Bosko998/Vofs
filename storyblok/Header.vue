@@ -5,7 +5,7 @@ const props = defineProps<{ blok: Header }>();
 </script>
 
 <template>
-  <div v-editable="props.blok" class="flex justify-between items-center">
+  <div v-editable="props.blok" class="grid grid-cols-3 place-items-center">
     <!-- Logo -->
     <NuxtLink to="/">
       <NuxtImg
