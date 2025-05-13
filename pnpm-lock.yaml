@@ -14,6 +14,9 @@ importers:
       '@formkit/nuxt':
         specifier: ^1.6.9
         version: 1.6.9(esbuild@0.17.19)(magicast@0.3.5)(rollup@4.36.0)(tailwindcss@3.4.17)(vite@6.2.2(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
+      '@heroicons/vue':
+        specifier: ^2.2.0
+        version: 2.2.0(vue@3.5.13(typescript@5.8.2))
       '@nuxt/image':
         specifier: ^1.10.0
         version: 1.10.0(db0@0.3.1)(ioredis@5.6.0)(magicast@0.3.5)
@@ -23,6 +26,9 @@ importers:
       '@storyblok/nuxt':
         specifier: ^6.2.4
         version: 6.2.4(vue@3.5.13(typescript@5.8.2))
+      '@vue-hero-icons/solid':
+        specifier: ^1.7.2
+        version: 1.7.2
       jszip:
         specifier: ^3.10.1
         version: 3.10.1
@@ -713,6 +719,11 @@ packages:
     resolution: {integrity: sha512-WrjAtEsKnFJzxQuATWsWKMpTAyJE15PUmRh9hwEAqgTDy2yMog1gxqxfZv3rEAdIdgXNp08tWmRVnQgDIF3vAQ==}
     peerDependencies:
       vue: ^3.4.0
+
+  '@heroicons/vue@2.2.0':
+    resolution: {integrity: sha512-G3dbSxoeEKqbi/DFalhRxJU4mTXJn7GwZ7ae8NuEQzd1bqdd0jAbdaBZlHPcvPD2xI1iGzNVB4k20Un2AguYPw==}
+    peerDependencies:
+      vue: '>= 3'
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1485,6 +1496,9 @@ packages:
       vitest:
         optional: true
 
+  '@vue-hero-icons/solid@1.7.2':
+    resolution: {integrity: sha512-ngjgdYgdjXp8BuHmx998Kl2tAmbatJXdYO8Cut+DXo9OVGZMuVmIzIjnar4H5Wf9wFVdCuag+HazLEu9F7T3cw==}
+
   '@vue-macros/common@1.16.1':
     resolution: {integrity: sha512-Pn/AWMTjoMYuquepLZP813BIcq8DTZiNCoaceuNlvaYuOTd8DqBZWc5u0uOMQZMInwME1mdSmmBAcTluiV9Jtg==}
     engines: {node: '>=16.14.0'}
@@ -1683,6 +1697,9 @@ packages:
 
   b4a@1.6.7:
     resolution: {integrity: sha512-OnAYlL5b7LEkALw87fUVafQw5rVR9RjwGd4KUwNQ6DrrNmaVaUCgLipfVlzrPQ4tWOR9P0IXGNOx50jYCCdSJg==}
+
+  babel-helper-vue-jsx-merge-props@2.0.3:
+    resolution: {integrity: sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -5874,6 +5891,10 @@ snapshots:
       - unocss
       - windicss
 
+  '@heroicons/vue@2.2.0(vue@3.5.13(typescript@5.8.2))':
+    dependencies:
+      vue: 3.5.13(typescript@5.8.2)
+
   '@humanfs/core@0.19.1': {}
 
   '@humanfs/node@0.16.6':
@@ -6863,6 +6884,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.2
 
+  '@vue-hero-icons/solid@1.7.2':
+    dependencies:
+      babel-helper-vue-jsx-merge-props: 2.0.3
+
   '@vue-macros/common@1.16.1(vue@3.5.13(typescript@5.8.2))':
     dependencies:
       '@vue/compiler-sfc': 3.5.13
@@ -7101,6 +7126,8 @@ snapshots:
       postcss-value-parser: 4.2.0
 
   b4a@1.6.7: {}
+
+  babel-helper-vue-jsx-merge-props@2.0.3: {}
 
   balanced-match@1.0.2: {}
 

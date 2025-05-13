@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr:true,
   runtimeConfig: {
     public:{
       APP_SERVER: process.env.APP_SERVER || "stage",
