@@ -17,12 +17,11 @@ const circleDetails = computed(()=>{
   .replaceAll('\n','')
   .split(',')
   .map((item,index)=>{
-    const [first, second,third] = item.split(' ');
-    return { key: first, value: second, extra: third||null,color: availableColors[index]|| '#1C75BC' }  // Include 'extra' if it exists
+    const [number, ...text] = item.split(' ');
+    return { key: number, value: text.join(' '),color: availableColors[index]|| '#1C75BC' }  // Include 'extra' if it exists
        
   })
 });
-
 </script>
 <template>
   <div
