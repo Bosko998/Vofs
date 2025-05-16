@@ -51,7 +51,7 @@ onMounted(() => {
       }
 
   }, { threshold: 0.1 });
-  //carousel.value && observer.observe(carousel.value);
+  carousel.value && observer.observe(carousel.value);
 });
 
 onUnmounted(()=>{
@@ -67,7 +67,7 @@ onUnmounted(()=>{
             <div 
                 v-for="(image, index) in imageOrder" 
                 :key="image.filename"
-                class="w-[600px] h-[292px] absolute transition-all duration-700 ease-in-out cursor-pointe"
+                class="w-[600px] h-[292px] absolute transition-transform duration-700 ease-in-out cursor-pointe"
                 :class="{
                     'z-20 scale-125': index === 1, /* Center image - biggest */
                     'z-10 scale-100 -rotate-y-20 -translate-x-80': index === 0, /* Left image */

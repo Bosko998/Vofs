@@ -22,7 +22,7 @@ const props = defineProps<Props>();
         <div>
             <p class=" text-base">{{ props.blok.aboutText }}</p>
         </div>
-        <NuxtLink to="/about" class="bg-primaryColor hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase cursor-pointer">procitaj vise...</NuxtLink>
+        <NuxtLink to="/o-nama" class="bg-primaryColor hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase cursor-pointer">procitaj vise...</NuxtLink>
     </div>
 
 
