@@ -15,7 +15,7 @@ onMounted(()=>{
     )
   }
 })
-console.log(story)
+
 </script>
 
 <template>

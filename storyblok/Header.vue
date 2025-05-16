@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { Header } from "~/component-types-sb";
-
 const props = defineProps<{ blok: Header }>();
+onMounted(()=>{
+  window.scrollTo({ top: 0, behavior: "smooth" });
+})
 </script>
 
 <template>
