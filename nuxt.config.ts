@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     "nuxt-svgo",
     "@nuxt/icon",
     "@storyblok/nuxt",
+    "@formkit/nuxt",
   ],
   tailwindcss: {
     viewer: false,

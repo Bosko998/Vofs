@@ -5,7 +5,7 @@ const props = defineProps<Props>();
 </script>
 <template>
   <div v-editable="props.blok">
-    <h1 class="text-2xl text-center">{{ props.blok.heading }}</h1>
+    <HeaderComponent class="text-2xl text-center">{{ props.blok.heading }}</HeaderComponent>
     <div class="flex flex-col items-center my-16 p-8">
 
       <!-- Unified grid layout -->
