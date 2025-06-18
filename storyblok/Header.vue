@@ -7,7 +7,7 @@ onMounted(()=>{
 </script>
 
 <template>
-  <div v-editable="props.blok" class="grid grid-cols-3 place-items-center">
+  <div v-editable="props.blok" class="grid grid-cols-3 place-items-center  bg-white/[0.05] backdrop-blur-xs rounded-2xl border border-white/[0.15] group hover:bg-white/[0.08] transition-all">
     <!-- Logo -->
     <NuxtLink to="/">
       <NuxtImg

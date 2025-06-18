@@ -54,7 +54,7 @@ const closeImg = () => {
 
 <template>
   <div v-editable="props.blok">
-    <h1 class="text-2xl text-center">{{ props.blok.heading }}</h1>
+    <HeaderComponent>{{ props.blok.heading }}</HeaderComponent>
     <SingleProjectIcons :date="icons.date" :location="icons.location" />
     <div class="my-16 p-8 flex flex-col text-center">
       <div

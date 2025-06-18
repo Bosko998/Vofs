@@ -51,7 +51,7 @@ onMounted(() => {
       }
 
   }, { threshold: 0.1 });
-  carousel.value && observer.observe(carousel.value);
+  //carousel.value && observer.observe(carousel.value);
 });
 
 onUnmounted(()=>{
