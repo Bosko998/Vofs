@@ -18,7 +18,7 @@ const props = defineProps<Props>();
     </div>
 
     <div class="flex basis-1/2 flex-wrap justify-center items-center">
-        <h1 class="text-4xl capitalize text-center">{{ props.blok.heading }}</h1>
+        <HeaderComponent class="text-4xl capitalize text-center">{{ props.blok.heading }}</HeaderComponent>
         <div>
             <p class=" text-base">{{ props.blok.aboutText }}</p>
         </div>

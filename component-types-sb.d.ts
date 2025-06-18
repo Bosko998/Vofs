@@ -112,3 +112,24 @@ export interface singleProjectIcons{
   component:"singleProjectIcons";
   [k:string]:any
 }
+export interface contactSection{
+heading:string;
+  [k:string]:any
+  component:"contactSection"
+}
+
+export interface contactSection{
+  heading:string;
+    [k:string]:any
+    component:"grid"
+  }
+  export interface Grid{
+    items:any
+    component:"grid"
+    [k:string]:any
+  }
+  export interface Heading{
+    items:string
+    component:"heading"
+    [k:string]:any
+  }

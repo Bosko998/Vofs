@@ -25,12 +25,12 @@ const circleDetails = computed(()=>{
 </script>
 <template>
   <div
-    class="bg-cover bg-center bg-no-repeat my-16 p-8 w-full h-[35rem] flex flex-col justify-between"
+    class="bg-cover bg-center bg-no-repeat my-16 p-8 w-4/5 h-[35rem] mx-auto flex flex-col justify-between"
     v-editable="props.blok"
-    :style="{ backgroundImage: `url('${props.blok.backgroundPic.filename}')` }"
+     :style="{ backgroundImage: `url('${props.blok.backgroundPic.filename}')` }"
   >
     <div>
-      <h1 class="text-2xl">{{ props.blok.headline }}</h1>
+      <HeaderComponent class="text-start">{{ props.blok.headline }}</HeaderComponent>
     </div>
 
     <!-- Circles Container -->

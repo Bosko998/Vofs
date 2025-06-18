@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import confetti from 'canvas-confetti';
+//import confetti from 'canvas-confetti';
 
 type Props = {
   circleElement: {
@@ -11,7 +11,7 @@ type Props = {
 
 const props = defineProps<Props>();
 const animatedValue = ref(0);
-const showTada = ref(false);
+//const showTada = ref(false);
 onMounted(() => {
   const target = parseInt(props.circleElement.key);
   const duration = 1000; // total animation duration in ms
@@ -30,17 +30,18 @@ onMounted(() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
       requestAnimationFrame(animate);
     } else {
-      showTada.value = true;
-      confetti({
-        particleCount: 50,
-        spread: 70,
-        origin: {x:0.15, y: 0.9 },
-      });
+      // showTada.value = true;
+      // confetti({
+      //   particleCount: 50,
+      //   spread: 70,
+      //   origin: {x:0.15, y: 0.9 },
+      // });
     }
   };
 
   requestAnimationFrame(animate);
 });
+
 </script>
 
 
