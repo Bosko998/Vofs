@@ -15,7 +15,7 @@ const gridStyle = `grid-cols-${Math.min(columnCount, 5)}` // max 6 columns for s
       v-for="(item, index) in props.blok.items"
       :key="item._uid || index"
       :blok="item"
-      :assetClass="props?.gridAssetClass"
+      :assetClass="props?.gridAssetClass || 'w-[700px]'"
       :containerAssetClass = props?.gridAssetClass
     />
   </div>
