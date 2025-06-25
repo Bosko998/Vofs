@@ -1,5 +1,5 @@
 <template>
-    <div class="my-container text-white z-10 py-8 my-16">
+    <div class="my-container text-white z-10 my-16">
       <!-- <div class="absolute inset-0 bg-[#0B334F]/30 -z-10 pointer-events-none"></div> -->
     <!-- <div class="absolute inset-0 bg-[radial-gradient(circle,white_1px,transparent_2px)] opacity-0 animate-pulse animation-delay-[2s] transform scale-[0.2] translate-x-[500px] translate-y-[50px]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(circle,white_1px,transparent_2px)] opacity-0 animate-pulse animation-delay-[1s] transform scale-[0.5] translate-x-[200px] translate-y-[20px]"></div>

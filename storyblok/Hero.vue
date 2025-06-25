@@ -30,7 +30,7 @@ const circleDetails = computed(()=>{
      :style="{ backgroundImage: `url('${props.blok.backgroundPic.filename}')` }"
   >
     <div>
-      <HeaderComponent class="text-start">{{ props.blok.headline }}</HeaderComponent>
+      <HeaderComponent class="text-start">{{ props.blok.heading }}</HeaderComponent>
     </div>
 
     <!-- Circles Container -->

@@ -5,7 +5,7 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-<div v-editable="props.blok">
+<div v-editable="props.blok" class=" my-0 mx-16 HERE">
 <StoryblokComponent v-for="bodyBlok in props.blok.blocks" :key="bodyBlok._uid" :blok="bodyBlok"/>
 </div>
 </template>
