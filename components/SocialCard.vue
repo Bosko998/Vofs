@@ -1,7 +1,6 @@
 <script setup lang="ts">
 type Props = {link:string,source:string};
 const props = defineProps<Props>();
-console.log(props)
 </script>
 
 <template>

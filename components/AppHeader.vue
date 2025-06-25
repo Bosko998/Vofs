@@ -7,7 +7,7 @@ const {data:story} = await useAsyncData(
 )
 </script>
 <template>
-    <div class="container my-0 mx-auto">
+    <div class="container my-16 mx-auto">
        <StoryblokComponent v-if="story" :blok="story.content"/> 
     </div>
 </template>

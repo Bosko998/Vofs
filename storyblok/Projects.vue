@@ -43,7 +43,6 @@ onMounted(() => {
       }else{
         // Ending interval and reverting default carousel position
         if (intervalId.value !== null) {
-        //console.log('I am ending interval rn')
           clearInterval(intervalId);
           intervalId.value = null;
           imageOrder.value =[...defaultPosition]
@@ -63,7 +62,7 @@ onUnmounted(()=>{
 
 <template>
     <div v-editable="props.blok">
-        <div ref="carousel" class="flex my-16 justify-center items-center overflow-visible mt-8 relative min-h-[400px] perspective-1000">
+        <div ref="carousel" class="flex my-16 p-8 justify-center items-center overflow-visible mt-8 relative min-h-[400px] perspective-1000">
             <div 
                 v-for="(image, index) in imageOrder" 
                 :key="image.filename"
