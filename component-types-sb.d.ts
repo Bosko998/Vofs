@@ -39,13 +39,18 @@ export interface TeaserStoryblok{
   component:"teaser";
   [k:string]:any
 }
-export interface MenuLink{
-  name:string;
+export interface Link{
   link:{
     cached_url:string;
     linktype:string;
     url:string;
   };
+  component:"link"
+  [k:string]:any
+}
+export interface MenuLink{
+  name:string;
+  link:Link;
   component:"menu_link"
   [k:string]:any
 }
@@ -69,14 +74,6 @@ export interface Projects{
   component:"projects";
   [k:string]:any;
 }
-
-export interface AboutSection{
-  TeamPic:AssetStoryblok;
-  heading:string;
-  aboutText:string;
-  component:"aboutSection";
-  [k:string]:any;
-}
 export interface Footer{
   component:"footer"
   [k:string]:any
@@ -94,10 +91,11 @@ export interface teamMembers{
   [k:string]:any
 }
 export interface ourProjectsPage{
-  heading:string;
+  items:Blok[];
   component:"ourProjectsPage";
   [k:string]:any
 }
+
 export interface singleProject{
   heading:string;
   topIcons:singleProjectIcons[];
@@ -117,19 +115,54 @@ heading:string;
   [k:string]:any
   component:"contactSection"
 }
-
-export interface contactSection{
-  heading:string;
-    [k:string]:any
-    component:"grid"
+  export interface Blok{
+    _uid: string;
+    component: "blok";
+    [k: string]: any;
   }
   export interface Grid{
-    items:any
+    items:Blok[];
     component:"grid"
-    [k:string]:any
+    [k:string]:any;
+  }
+  export interface Flex{
+    items:Blok[];
+    component:"flex";
+    [k:string]:any;
+  }
+  export interface Container{
+    items:Blok[];
+    component:"flex";
+    [k:string]:any;
   }
   export interface Heading{
-    items:string
-    component:"heading"
-    [k:string]:any
+    items:string;
+    component:"heading";
+    [k:string]:any;
+  }
+  export interface Section{
+    items:Blok[];
+    component:"section";
+    [k:string]:any;
+  }
+  export interface Paragraph{
+    text:ISbRichtext
+    component:"paragraph";
+    [k:string]:any;
+  }
+  export interface Button{
+    text:string;
+    link:Link;
+    component:"button";
+    [k:string]:any;
+  }
+  export interface Form{
+    items:Blok[];
+    component:"form";
+    [k:string]:any;
+  }
+  export interface Input{
+    items:Blok[];
+    component:"input";
+    [k:string]:any;
   }
